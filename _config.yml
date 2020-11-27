@@ -23,13 +23,14 @@ name: "Alex's Tech Blog"
 author: Alex To
 email: tonhudung@gmail.com
 description: Document my learning journey
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alexto.github.io"
-github_username:  alexto
+github_username: alexto
 
 plugins:
   - jekyll-feed
+  - jekyll-inline-svg
 
 markdown: kramdown
 highlighter: rouge
@@ -38,7 +39,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - serve.sh
+
 kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
+
+svg:
+  optimize: true

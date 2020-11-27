@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Locating Objects without bounding boxes (Ribera et al., 2019)
+title: Locating objects without bounding boxes
 date: 2020-11-09 08:39
 author: Alex To
 tags: deep-learning computer-vision convolutional-neural-network hausdorff-distance
@@ -13,9 +13,7 @@ comments: true
 
 {% cite Ribera2019 %} aim to achieve object localization without using bounding boxes. That means, instead of annotating the images with boxes, the ground truth labels are now points. The authors argued that using points as ground truth labels might be less laborious to obtain in some cases where bounding boxes are not required.
 
-Supposed we have ground truth labels as a set of points, let's call it $$A$$, we want to estimate a set $$B$$ that is as close to $$A$$ as possible. To train the network, we need to measure how far off the estimated set B is from A. We all know how to measure the distance between two points right?, but how to measure distance between two sets of points ? One way is to built on the idea of Hausdorff Distance. If you are not familiar with what Hausdorff Distance is, you may want to check out my previous blog post [here]({% post_url 2020-11-09-hausdorff-distance %}) ;)
-
-Alright, so now we know that we can build a loss function based on Average Hausdorff Distance (AHD), let's see why it might be tricky to construct a loss function from its original form. The AHD is defined by
+Supposed we have ground truth labels as a set of points, let's call it $$A$$, we want to estimate a set $$B$$ that is as close to $$A$$ as possible. To train the network, we need to measure how far off the estimated set B is from A. We all know how to measure the distance between two points right?, but how to measure distance between two sets of points ? One way is to built on the idea of [Hausdorff Distance]({% post_url 2020-11-09-hausdorff-distance %}).
 
 $$
 d_{AH}(A, B) = \frac{1}{|A|}\sum_{a \in A}\min_{b \in B}d(a, b) + \frac{1}{|B|}\sum_{b \in B}\min_{a \in A}d(a, b)
@@ -85,6 +83,6 @@ Hope you like my post and if there is any part that is not clear, leave a commen
 References
 ---
 
-{% bibliography --cited%}
+{% bibliography --cited %}
 
 

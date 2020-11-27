@@ -20,6 +20,7 @@ group :jekyll_plugins do
    gem "jekyll-feed"
    gem "jekyll-scholar"
    gem "jekyll-figure"
+   gem "jekyll-inline-svg"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

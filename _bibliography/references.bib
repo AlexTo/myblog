@@ -10,6 +10,28 @@ url = {http://cgm.cs.mcgill.ca/{~}godfried/teaching/cg-projects/98/normand/main.
 year = {1998}
 }
 
+@article{hinton2012improving,
+  title={Improving neural networks by preventing co-adaptation of feature detectors},
+  author={Hinton, Geoffrey E and Srivastava, Nitish and Krizhevsky, Alex and Sutskever, Ilya and Salakhutdinov, Ruslan R},
+  journal={arXiv preprint arXiv:1207.0580},
+  year={2012}
+}
+
+@article{Lin2014,
+abstract = {We propose a novel deep network structure called “Network In Network”(NIN) to enhance model discriminability for local patches within the receptive field. The conventional convolutional layer uses linear filters followed by a nonlinear activation function to scan the input. Instead, we build micro neural networks with more complex structures to abstract the data within the receptive field. We instantiate the micro neural network with a multilayer perceptron, which is a potent function approximator. The feature maps are obtained by sliding the micro networks over the input in a similar manner as CNN; they are then fed into the next layer. Deep NIN can be implemented by stacking mutiple of the above described structure. With enhanced local modeling via the micro network, we are able to utilize global average pooling over feature maps in the classification layer, which is easier to interpret and less prone to overfitting than traditional fully connected layers. We demonstrated the state-of-the-art classification performances with NIN on CIFAR-10 and CIFAR-100, and reasonable performances on SVHN and MNIST datasets.},
+archivePrefix = {arXiv},
+arxivId = {arXiv:1312.4400v3},
+author = {Lin, Min and Chen, Qiang and Yan, Shuicheng},
+eprint = {arXiv:1312.4400v3},
+file = {:Users/alexto/Documents/Mendeley Desktop/Lin, Chen, Yan - 2014 - Network in network.pdf:pdf},
+journal = {2nd International Conference on Learning Representations, ICLR 2014 - Conference Track Proceedings},
+mendeley-groups = {Computer Vision},
+pages = {1--10},
+title = {{Network in network}},
+year = {2014}
+}
+
+
 @article{Ronneberger2015,
 archivePrefix = {arXiv},
 arxivId = {1505.04597},
@@ -26,6 +48,16 @@ volume = {9351},
 year = {2015}
 }
 
+@article{Zhou2016,
+abstract = {In this work, we revisit the global average pooling layer proposed in [13], and shed light on how it explicitly enables the convolutional neural network to have remarkable localization ability despite being trained on image-level labels. While this technique was previously proposed as a means for regularizing training, we find that it actually builds a generic localizable deep representation that can be applied to a variety of tasks. Despite the apparent simplicity of global average pooling, we are able to achieve 37.1{\%} top-5 error for object localization on ILSVRC 2014, which is remarkably close to the 34.2{\%} top-5 error achieved by a fully supervised CNN approach. We demonstrate that our network is able to localize the discriminative image regions on a variety of tasks despite not being trained for them},
+author = {Zhou, Bolei and Khosla, Aditya and Lapedriza, Agata and Oliva, Aude and Torralba, Antonio},
+mendeley-groups = {Reliable AI},
+number = {1},
+title = {{Learning Deep Features for Discriminative Localization}},
+year = {2016}
+}
+
+
 @article{Ribera2019,
 author = {Ribera, Javier and Guera, David and Chen, Yuhao and Delp, Edward J.},
 doi = {10.1109/CVPR.2019.00664},
@@ -37,17 +69,18 @@ volume = {2019-June},
 year = {2019}
 }
 
-@article{Jahanshahi2012,
-author = {Jahanshahi, Mohammad R. and Masri, Sami F.},
-doi = {10.1016/j.autcon.2011.11.018},
-issn = {09265805},
-journal = {Automation in Construction},
-keywords = {3D scene reconstruction,Computer vision,Crack detection,Image processing,Morphological operation,Pattern classification},
-mendeley-groups = {Computer Vision},
-pages = {567--576},
-publisher = {Elsevier B.V.},
-title = {{Adaptive vision-based crack detection using 3D scene reconstruction for condition assessment of structures}},
-url = {http://dx.doi.org/10.1016/j.autcon.2011.11.018},
-volume = {22},
-year = {2012}
+@article{Selvaraju2016,
+abstract = {We propose a technique for producing "visual explanations" for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. Unlike previous approaches, GradCAM is applicable to a wide variety of CNN model-families: (1) CNNs with fully-connected layers (e.g. VGG), (2) CNNs used for structured outputs (e.g. captioning), (3) CNNs used in tasks with multimodal inputs (e.g. VQA) or reinforcement learning, without any architectural changes or re-training. We combine GradCAM with fine-grained visualizations to create a high-resolution class-discriminative visualization and apply it to off-the-shelf image classification, captioning, and visual question answering (VQA) models, including ResNet-based architectures. In the context of image classification models, our visualizations (a) lend insights into their failure modes (showing that seemingly unreasonable predictions have reasonable explanations), (b) are robust to adversarial images, (c) outperform previous methods on weakly-supervised localization, (d) are more faithful to the underlying model and (e) help achieve generalization by identifying dataset bias. For captioning and VQA, our visualizations show that even non-attention based models can localize inputs. Finally, we conduct human studies to measure if GradCAM explanations help users establish trust in predictions from deep networks and show that GradCAM helps untrained users successfully discern a "stronger" deep network from a "weaker" one. Our code is available at https://github.com/ramprs/grad-cam. A demo and a video of the demo can be found at http://gradcam.cloudcv.org and youtu.be/COjUB9Izk6E.},
+archivePrefix = {arXiv},
+arxivId = {1610.02391},
+author = {Selvaraju, Ramprasaath R. and Cogswell, Michael and Das, Abhishek and Vedantam, Ramakrishna and Parikh, Devi and Batra, Dhruv},
+eprint = {1610.02391},
+issn = {00418781},
+journal = {Revista do Hospital das Cl??nicas},
+mendeley-groups = {Reliability AI},
+pages = {331--336},
+title = {{Grad-cam: Why did you say that? visual explanations from deep networks via gradient-based localization}},
+url = {http://arxiv.org/abs/1610.02391},
+volume = {17},
+year = {2016}
 }
